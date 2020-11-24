@@ -2,31 +2,32 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./modern-normalize.css">
 </head>
-<body>
+<body class="body"> 
     <header>
-        
-        <div class="container">
-            <a href=""><img src="./images/WebStudio.svg" alt="логотип"></a>
-           <nav> 
-             <ul class="ul">
-                <li><a href="">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li> 
-            </ul>
-           </nav>
-            <address>
-             <ul class="address">
-                 <li><a href="">info@devstudio.com</a></li>
-                 <li><a href="">+38 096 111 11 11</a></li>
-             </ul>   
-            </address>
-        </div>
+        <div class="container" >
+                <nav> 
+                <a href="" class="nav-a"><img src="./images/WebStudio.svg" alt="логотип"></a>
+                 <ul class="ul">
+                    <li><a href="">Студия</a></li>
+                    <li><a href="./portfolio.html">Портфолио</a></li>
+                    <li><a href="">Контакты</a></li> 
+                </ul>
+               </nav>
+               <address>
+               <ul class="address">
+                     <li class="address-li"><a href="">info@devstudio.com</a></li>
+                     <li><a href="">+38 096 111 11 11</a></li>
+                 </ul>   
+                </address>
+            </div>
     </header>
+
     <main>
     <section class="hero">
     <h1>Эффективные решения<br/> для вашего бизнеса</h1>
@@ -34,6 +35,7 @@
     </section>
     <section class="info">
         <!-- <h2></h2>-->
+    <div class="container">
         <ul>
             <li>
                 <h3>Внимание к деталям</h3>
@@ -52,53 +54,58 @@
                 <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
-        
+    </div>
 
     </section>
-    <section>
+    <section class="work">
+    <div class="container">
         <h2 class="tasks" >Чем мы занимаемся</h2>
-        <ul>
+        <ul class="tasks-ul">
             <li><img src="./images/comp.png" alt="работа за компьютером"></li>
             <li><img src="./images/phone.png" alt="работа за телефоном"></li>
             <li><img src="./images/tablet.png" alt="работа за планшетом"></li>
         </ul>
+    </div>
 
     </section>
-    <section>
+    <section class="people">
+        <div class="container">
         <h2 class="command">Наша команда</h2>
         <ul class="list">
             <li><img src="./images/img.jpg" alt="Игорь Демьяненко" width="270">
                  <h3>Игорь Демьяненко</h3>
-                 <p>Product Designer</p></li>
+                 <p>Product Designer</p>
+                </li>
             <li><img src="./images/Ольга Репина.jpg" alt="Ольга Репина" width="270">
                 <h3>Ольга Репина</h3>
-                <p>Frontend Developer</p></li>
+                <p>Frontend Developer</p>
+          </li>
              <li><img src="./images/Николай Тарасов.jpg" alt="Николай Тарасов" width="270">
                 <h3>Николай Тарасов</h3>
-                <p>Marketing</p></li>
+                <p>Marketing</p>
+            </li>
             <li><img src="./images/Михаил ермаков.jpg" alt="Михаил Ермаков" width="270">
                 <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p></li>
             
         </ul>
+    </div>
         
        
 
     </section>
     </main>
     <footer>
-        <a href=""><img src="./images/web.svg" alt="логотип"></a>
-        <address>
+        <div class="container">
+        <a href="" class="footer-a"><img src="./images/web.svg" alt="логотип"></a>
+        <address class="address-footer">
             <ul class="address-nav">
                 <li>г. Киев, пр-т Леси Украинки, 26</li>
                 <li><a href="" class="address-list">info@example.com</a></li>
                 <li><a href="" class="address-list">+38 099 111 11 11</a></li>
             </ul>
-        </address>
-        
-
-    </footer>
-
-    
+      </address>
+</footer>
+</div>
 </body>
 </html>
